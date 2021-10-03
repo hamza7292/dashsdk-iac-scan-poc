@@ -34,7 +34,7 @@ jobs:
         uses: gagoar/invoke-aws-lambda@v3.3.0 
         with:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           REGION: us-east-1
           FunctionName: dashsdk-iac-scan
           Payload: '{ "Repo" :"${{ github.event.repository.name }}"}'

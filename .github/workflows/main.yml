@@ -37,4 +37,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           REGION: us-east-1
           FunctionName: dashsdk-iac-scan
-          Payload: '{ "Repo" :"${{ github.event.repository }}"}'
+          Payload: '{ "Repository" :"${{ github.repository }}" }'
